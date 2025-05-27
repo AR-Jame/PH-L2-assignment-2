@@ -1,14 +1,12 @@
-SELECT * from rangers;
 
--- CREATE Table rangers (
+CREATE Table rangers (
 --     ranger_id SERIAL PRIMARY KEY,
 --     name VARCHAR(80) NOT NULL,
 --     region VARCHAR(80) NOT NULL
 -- );
 
-SELECT * from species;
 
--- CREATE Table species (
+CREATE Table species (
 --     species_id SERIAL PRIMARY KEY,
 --     common_name VARCHAR(80) NOT NULL,
 --     scientific_name VARCHAR(120) NOT NULL,
@@ -16,7 +14,7 @@ SELECT * from species;
 --     conservation_status VARCHAR(50)
 -- );
 
--- CREATE Table sightings (
+CREATE Table sightings (
 --     sighting_id SERIAL PRIMARY KEY,
 --     ranger_id INT NOT NULL,
 --     species_id INT NOT NULL,
@@ -57,8 +55,6 @@ VALUES (
         '1758-01-01',
         'Endangered'
     );
-
-SELECT * FROM sightings;
 
 INSERT INTO
     sightings (
